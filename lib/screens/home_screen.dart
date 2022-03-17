@@ -1,10 +1,11 @@
 import 'package:chat_ui/widgets/category_selector.dart';
 import 'package:chat_ui/widgets/favorite_contacts.dart';
+import 'package:chat_ui/widgets/recent_chats.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({ Key? key }) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -17,8 +18,8 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Theme.of(context).primaryColor,
       appBar: AppBar(
         leading: IconButton(
-          onPressed: (){}, 
-          icon:  Icon(Icons.menu),
+          onPressed: () {},
+          icon: Icon(Icons.menu),
           iconSize: 30.0,
         ),
         title: Center(
@@ -33,15 +34,15 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 0.0,
         actions: [
           IconButton(
-            onPressed: (){}, 
-            icon:  Icon(Icons.search),
+            onPressed: () {},
+            icon: Icon(Icons.search),
             iconSize: 30.0,
           ),
         ],
       ),
       body: Column(
         children: [
-          CategorySelector(),//Foi desenvolvido noutra página
+          CategorySelector(), //Foi desenvolvido noutra página
           Expanded(
             child: Container(
               decoration: BoxDecoration(
@@ -53,7 +54,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: Column(
                 children: [
-                  FavoriteContacts(),//Foi desenvolvido noutra página
+                  FavoriteContacts(), //Foi desenvolvido noutra página
+                  RecentChats(), //Foi desenvolvido noutra página
                 ],
               ),
             ),
