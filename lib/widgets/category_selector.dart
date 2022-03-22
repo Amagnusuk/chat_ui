@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+//DESENVOLVEU-SE A PARTE QUE SE JUNTOU AO APPBAR DO APLICATIVO
+//DESENVOLVEU-SE A PARTE QUE SE JUNTOU AO APPBAR DO APLICATIVO
 class CategorySelector extends StatefulWidget {
   const CategorySelector({Key? key}) : super(key: key);
 

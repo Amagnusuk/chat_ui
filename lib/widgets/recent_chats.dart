@@ -1,5 +1,5 @@
 import 'package:chat_ui/models/message_model.dart';
-import 'package:chat_ui/screens/chat_sreen.dart';
+import 'package:chat_ui/screens/chat_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
@@ -33,8 +33,8 @@ class RecentChats extends StatelessWidget {
                 onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => ChatSreen(//Desenvolvido noutra página
-                      user: chat.sender,
+                    builder: (_) => ChatScreen(//Desenvolvido noutra página
+                      user: chat.sender, 
                     ),
                   ),
                 ),

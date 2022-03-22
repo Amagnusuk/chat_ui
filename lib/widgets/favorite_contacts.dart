@@ -1,5 +1,5 @@
 import 'package:chat_ui/models/message_model.dart';
-import 'package:chat_ui/screens/chat_sreen.dart';
+import 'package:chat_ui/screens/chat_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -47,8 +47,8 @@ class FavoriteContacts extends StatelessWidget {
                   onTap: () => Navigator.push(
                     context, 
                     MaterialPageRoute(
-                      builder: (_) => ChatSreen(//Foi desenvolvido noutra página
-                        user: favorites[index],
+                      builder: (_) => ChatScreen(//Foi desenvolvido noutra página
+                        user: favorites[index], 
                       ),
                     ),
                   ),

@@ -4,6 +4,8 @@ import 'package:chat_ui/widgets/recent_chats.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+//DESENVOLVEU-SE O APPBAR DO APLICATIVO AQUI
+//DESENVOLVEU-SE O APPBAR DO APLICATIVO AQUI
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
